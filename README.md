@@ -30,3 +30,4 @@ npm run dev
 ```
 
 The app will be available at `http://localhost:5173`.
+[Investment Calculator](https://vercel.com/kamils-projects-3ccb9189/investment-calculator)
