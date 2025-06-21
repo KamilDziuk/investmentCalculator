@@ -1,6 +1,8 @@
 
 # Investment Calculator
 
+![presentation](src/assets/presentation.gif)
+
 A simple web application that calculates investment value based on user input.
 Built with **React**, **JavaScript**, **HTML**, and styled with **CSS**.
 The project uses **Vite** as the build tool.
