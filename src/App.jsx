@@ -11,6 +11,8 @@ function App() {
     duration: 11,
   });
 
+  const inputIsValid
+
   return (
     <>
       <Header />
