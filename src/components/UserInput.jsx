@@ -1,8 +1,5 @@
 export default function UserInput({
-  setInitialInvestment,
-  setAnnualInvestment,
-  setExpectedReturn,
-  setDuration,
+onChange, userInput 
 }) {
   return (
 
@@ -54,6 +51,6 @@ export default function UserInput({
           </label>
         </div>
       </section>
-    
+
   );
 }
