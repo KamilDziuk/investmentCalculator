@@ -1,56 +1,48 @@
 export default function UserInput({
-onChange, userInput 
+onChange, userInput
 }) {
   return (
-
-      <section id="user-input">
-        <div className="input-group">
-          <label>
-            Initial Investment
-            <p>
-              <input
-                type="number"
-                placeholder="10000"
-                onChange={(e) => setInitialInvestment(e.target.value)}
-              />
-            </p>
-          </label>
-
-          <label>
-            Annual Investment
-            <p>
-              <input
-                type="number"
-                placeholder="1200"
-                onChange={(e) => setAnnualInvestment(e.target.value)}
-              />
-            </p>
-          </label>
-        </div>
-        <div className="input-group">
-          <label>
-            Expected Return
-            <p>
-              <input
-                type="number"
-                placeholder="6"
-                onChange={(e) => setExpectedReturn(e.target.value)}
-              />
-            </p>
-          </label>
-
-          <label>
-            Duration
-            <p>
-              <input
-                type="number"
-                placeholder="10"
-                onChange={(e) => setDuration(e.target.value)}
-              />
-            </p>
-          </label>
-        </div>
-      </section>
-
+    <section id="user-input">
+      <div className="input-group">
+        <p>
+          <label>Initial Investment</label>
+          <input
+            type="number"
+            value={userInput.initialInvestment}
+            onChange={(event) =>
+              onChange("initialInvestment", event.target.value)
+            }
+          />
+        </p>
+        <p>
+          <label>Annual Investment</label>
+          <input
+            type="number"
+            value={userInput.annualInvestment}
+            onChange={(event) =>
+              onChange("annualInvestment", event.target.value)
+            }
+          />
+        </p>
+      </div>
+      <div className="input-group">
+        <p>
+          <label>Expected Return</label>
+          <input
+            type="number"
+            value={userInput.expectedReturn}
+            onChange={(event) => onChange("expectedReturn", event.target.value)}
+          />
+        </p>
+        <p>
+          <label>Duration</label>
+          <input
+            type="number"
+            value={userInput.duration}
+            onChange={(event) => onChange("duration", event.target.value)}
+          />
+        </p>
+      </div>
+    </section>
   );
 }
