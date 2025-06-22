@@ -11,7 +11,7 @@ function App() {
     duration: 11,
   });
 
-  const inputIsValid
+  const inputIsValid = userInput.duration >= 1;
 
   return (
     <>
