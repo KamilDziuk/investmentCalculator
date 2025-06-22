@@ -12,7 +12,7 @@ export default function Result({ input }) {
 
   return (
     <table id="result">
-      <thead>
+  <thead>
         <tr>
           <th>Year</th>
           <th>Interest (Year)</th>
@@ -21,7 +21,24 @@ export default function Result({ input }) {
           <th>Invested Capital</th>
         </tr>
       </thead>
-      <tbody>{valueElement}</tbody>
+      <tbody>
+        {resultsData.map((yearData) => {
+          const totaInterest =
+            yearData.valueEndOfYear -
+            yearData.annualInvestment * yearData.year -
+            initialInvestment;
+          const totalAmountInvestment = yearData.valueEndOfYear - totaInterest;
+          return (
+            <tr key={yearData.year}>
+              <td>{yearData.year}</td>
+              <td>{formatter.format(yearData.valueEndOfYear)}</td>
+              <td>{formatter.format(yearData.interest)}</td>
+              <td>{formatter.format(totaInterest)}</td>
+              <td>{formatter.format(totalAmountInvestment)}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 }
