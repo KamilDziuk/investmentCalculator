@@ -24,19 +24,12 @@ function App() {
   return (
     <>
       <Header />
-      <UserInput
-        setInitialInvestment={setInitialInvestment}
-        setAnnualInvestment={setAnnualInvestment}
-        setExpectedReturn={setExpectedReturn}
-        setDuration={setDuration}
-      />
-      <Result
-        initialInvestment={initialInvestment}
-        annualInvestment={annualInvestment}
-        expectedReturn={expectedReturn}
-        duration={duration}
-      />
-    </>
+      <UserInput userInput={userInput} onChange={handleChange} />
+      {inputIsValid && <Result input={userInput} />}
+      {!inputIsValid && (
+        <p className="center">The duration must be positive than zero</p>
+      )}
+     </>
   );
 }
 
