@@ -1,12 +1,7 @@
 import { calculateInvestmentResults, formatter } from "../util/investment";
 
 export default function Result({ input }) {
-  const resultsData = calculateInvestmentResults({
-    initialInvestment: initialInvestment,
-    annualInvestment: annualInvestment,
-    expectedReturn: expectedReturn,
-    duration: duration,
-  });
+  const resultsData = calculateInvestmentResults(input);
 
   const valueElement = resultsData.map((resultsData) => {
     return (
