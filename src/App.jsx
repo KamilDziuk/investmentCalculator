@@ -4,10 +4,12 @@ import UserInput from "./components/UserInput";
 import { useState } from "react";
 
 function App() {
-  const [initialInvestment, setInitialInvestment] = useState(1000);
-  const [annualInvestment, setAnnualInvestment] = useState(1200);
-  const [expectedReturn, setExpectedReturn] = useState(6);
-  const [duration, setDuration] = useState(10);
+  const [userInput, setUserInput] = useState({
+    initialInvestment: 7000,
+    annualInvestment: 2300,
+    expectedReturn: 4,
+    duration: 11,
+  });
 
   return (
     <>
