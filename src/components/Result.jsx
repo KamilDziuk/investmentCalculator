@@ -3,6 +3,8 @@ import { calculateInvestmentResults, formatter } from "../util/investment";
 export default function Result({ input }) {
   const resultsData = calculateInvestmentResults(input);
 
+  const initialInvestment
+
   const valueElement = resultsData.map((resultsData) => {
     return (
       <tr key={resultsData.year}>
