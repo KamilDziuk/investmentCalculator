@@ -1,11 +1,6 @@
 import { calculateInvestmentResults, formatter } from "../util/investment";
 
-export default function Result({
-  initialInvestment,
-  annualInvestment,
-  expectedReturn,
-  duration,
-}) {
+export default function Result({ input }) {
   const value = calculateInvestmentResults({
     initialInvestment: initialInvestment,
     annualInvestment: annualInvestment,
