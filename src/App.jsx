@@ -13,6 +13,14 @@ function App() {
 
   const inputIsValid = userInput.duration >= 1;
 
+  function handleChange(inputIdentifier, newValue) {
+    setUserInput((prevUserInput) => {
+      return {
+        ...prevUserInput,
+        [inputIdentifier]: +newValue,
+      };
+    });
+  }
   return (
     <>
       <Header />
