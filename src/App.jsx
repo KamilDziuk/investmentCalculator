@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import Result from "./components/Result";
-import UserInput from "./components/UserInput";
+import UserInput from "./components/UserInput/UserInput";
 import { useState } from "react";
 
 function App() {
