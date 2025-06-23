@@ -1,9 +1,8 @@
-export default function UserInput({
-onChange, userInput
-}) {
+import styles from "./UserInput.module.css";
+export default function UserInput({ onChange, userInput }) {
   return (
-    <section id="user-input">
-      <div className="input-group">
+    <section id={styles.userInput}>
+      <div className={styles.inputGroup}>
         <p>
           <label>Initial Investment</label>
           <input
@@ -25,7 +24,7 @@ onChange, userInput
           />
         </p>
       </div>
-      <div className="input-group">
+      <div className={styles.inputGroup}>
         <p>
           <label>Expected Return</label>
           <input
