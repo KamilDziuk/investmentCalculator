@@ -26,42 +26,6 @@ body {
   font-size: 1.5rem;
 }
 
-#user-input {
-  padding: 1rem;
-  max-width: 30rem;
-  margin: 2rem auto;
-  border-radius: 4px;
-  background: linear-gradient(180deg, #303e7e, #2b6999);
-}
-
-.input-group {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1.5rem;
-}
-
-#user-input label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-size: 0.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#user-input input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #767bc0;
-  border-radius: 0.25rem;
-  background-color: transparent;
-  color: #c2cce9;
-  font-size: 1rem;
-}
-
-input::placeholder {
-  color: rgba(255, 255, 255, 0.355);
-}
-
 .center {
   text-align: center;
 }
