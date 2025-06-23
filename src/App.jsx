@@ -25,7 +25,7 @@ function App() {
     <>
       <Header />
       <UserInput userInput={userInput} onChange={handleChange} />
-      {inputIsValid && <Result input={userInput} />}
+      {inputIsValid && <Results input={userInput} />}
       {!inputIsValid && (
         <p className="center">The duration must be positive than zero</p>
       )}
