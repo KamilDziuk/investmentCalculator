@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import Result from "./components/Result";
+import Results from "./components/Results/Results";
 import UserInput from "./components/UserInput/UserInput";
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ function App() {
       {!inputIsValid && (
         <p className="center">The duration must be positive than zero</p>
       )}
-     </>
+    </>
   );
 }
 
