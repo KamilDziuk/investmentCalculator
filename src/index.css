@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -64,25 +62,6 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.355);
 }
 
-#result {
-  max-width: 100%;
-  margin: 2rem auto;
-  padding: 1rem;
-  table-layout: fixed;
-  border-spacing: 1rem;
-  text-align: right;
-}
-
-#result thead {
-  font-size: 0.7rem;
-  color: #364ff4;
-}
-
 .center {
   text-align: center;
-}
-
-#result tbody {
-  font-size: 0.85rem;
-  color: #c2c7e9;
 }
