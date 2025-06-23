@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Result from "./components/Result";
 import UserInput from "./components/UserInput";
 import { useState } from "react";
